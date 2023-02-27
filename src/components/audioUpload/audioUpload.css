@@ -1,0 +1,141 @@
+.audio_upload {
+  overflow-x: hidden;
+}
+
+.audio_upload-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.audio_upload-container-title {
+  flex: 1;
+  max-width: 200px;
+  margin-left: 5rem;
+  margin-right: 1rem;
+}
+
+.audio_upload-container-title h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 312% */
+
+  letter-spacing: -0.04em;
+
+  color: #ffffff;
+}
+
+.audio_upload-container-title div {
+  width: 38px;
+  height: 3px;
+  background: var(--gradient-bar);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.25rem;
+}
+
+.audio_upload-container-text {
+  flex: 2;
+  max-width: 390px;
+  display: flex;
+  margin-right: 350px;
+}
+
+.audio_upload-container-text p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 550px) {
+  .audio_upload-container-title h1 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .audio_upload-container-title p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .audio_upload-container {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .audio_upload-container-title h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .audio_upload-container-title p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .audio_upload-container {
+    margin: 2rem 1rem;
+  }
+}
+
+.audio_upload_buttons_section {
+  /* border: 3px solid #fff; */
+  padding: 20px;
+}
+.audio_upload_denoise_button {
+  float: left;
+}
+/* .audio_upload_specs_button button{
+    min-height: 20px;
+    padding-right: 10px;
+    margin-inline-start: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+.submitbtn:hover {
+  background-color: #c94326;
+  border: 2px solid #8a2c17;
+}
+.audio_upload_denoise_button button {
+  /* flex: 0.6; */
+  /* width: 100%; */
+
+  min-height: 20px;
+  padding-right: 10px;
+  margin-inline-start: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  background: #ff4820;
+  border: 2px solid #ff4820;
+  padding: 0 1rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.audio_upload_denoise_button button:hover {
+  background-color: #883320;
+  border: 2px solid #8a2c17;
+}
+#show-spec-btn:hover {
+  background-color: #4f35af;
+  border: 2px solid #4b299c;
+}

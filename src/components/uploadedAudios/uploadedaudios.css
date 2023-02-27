@@ -1,0 +1,38 @@
+.gpt3__brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gpt3__brand div {
+  flex: 3;
+  max-width: 150px;
+  min-width: 120px;
+  display: flex;
+  margin-bottom: 100px;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+}
+
+div.video_cont {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  padding-right: 100px;
+  margin-right: 270px;
+}
+
+.video_text {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 24px;
+  display: block;
+  padding-left: 120px;
+  letter-spacing: -0.04em;
+  padding-bottom: 30px;
+
+  color: #ffffff;
+}

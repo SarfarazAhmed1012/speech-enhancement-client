@@ -1,0 +1,264 @@
+.contact-modal {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Overlay effect: translucent background: black w/ partial opacity */
+  z-index: 1; /* Overlay effect: positioned over other containers */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  position: fixed; /* Fix position on the top-left corner*/
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 50px; /* Location of the content container */
+}
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  border-radius: 15px;
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 100%
+  );
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #b6b6c5;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+.screen-header-left img {
+  width: 30px;
+  height: 25px;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: rgb(255, 245, 245);
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-close {
+  width: 100%;
+  height: 100%;
+}
+.screen-header-close:hover {
+  color: #2508a8;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ff4820;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 49px;
+  height: 4px;
+  background: #eb2e04;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: rgb(255, 231, 231);
+  font-size: 12px;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(105, 96, 96);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: rgb(119, 114, 114);
+}
+
+.app-form-control:focus {
+  border-bottom-color: rgb(243, 231, 231);
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #69daee;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.app-form-button:hover {
+  color: #1e535c;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+    font-size: 30px;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}

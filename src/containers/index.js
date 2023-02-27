@@ -1,0 +1,9 @@
+export { default as Blog } from "./blog/Blog";
+export { default as DenoiseVideo } from "./denoiseVideo/DenoiseVideo";
+export { default as Footer } from "./footer/Footer";
+export { default as Header } from "./header/Header";
+export { default as Possibility } from "./possibility/Possibility";
+export { default as ReadMore } from "./readMore/ReadMore";
+export { default as Record } from "./record/Record";
+export { default as AboutUs } from "./aboutus/AboutUs";
+export { default as DenoiseBy1D } from "./denoise1D/DenoiseBy1D";
